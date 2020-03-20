@@ -1,39 +1,79 @@
 <html>
+  <head> 
+      <link rel="stylesheet" href="jQapp.css">
+  </head>
+  <body>
+<div id="flip">Click here to choose your dream pet! 
+  <p>Hide all animals until you have chosen your favorite pet. </p></div>
+<div class="panel">  
+<button id="hide">Hide Dog</button>
+<button id="show">Show Dog</button>
+<button id="hid">Hide Chicken</button>
+<button id="sho">Show Chicken</button> 
+<button id="hi">Hide Chameleon</button>
+<button id="sh">Show Chameleon</button> 
+ <button id="h">Hide Cat</button>
+  <button id="s">Show Cat</button>  
+  <div id="dog">
+  <img src= "https://boygeniusreport.files.wordpress.com/2016/11/puppy-dog.jpg?quality=98&strip=all&w=782">
+  </div>
+  <div id="chicken">
+<img src="https://i2-prod.mirror.co.uk/incoming/article8456597.ece/ALTERNATES/s615/Chicken.jpg">
+   </div>
+  <div id="chameleon">
+<img src="https://cdn0.wideopenpets.com/wp-content/uploads/2016/01/rsz_chameleon-03-770x405.jpg">
+   </div>
+  <div id="cat">
+<img src="https://imgix.bustle.com/uploads/image/2018/10/18/4e1afb93-afba-49fe-96e6-b2bbd1ea0125-safe-toys-for-kittens.jpg?w=970&h=546&fit=crop&crop=faces&auto=format&q=70">
+  </div>
+  </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+    <script> $(document).ready(function(){
+  $("#flip").click(function(){
+    $(".panel").slideDown("slow");
+  });
+});
 
-<head>
-    <link rel="stylesheet" href="jQapp.css">
-</head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#dog").hide();
+  });
+  $("#show").click(function(){
+    $("#dog").show();
+  });
+});
 
-<body>
-    <div id="flip">Click here to choose your dream pet!
-          <p>Hide all animals until you have chosen your favorite pet. </p>
-    </div>
-    <div class="panel">
-        <button id="hide">Hide Dog</button>
-        <button id="show">Show Dog</button>
-        <button id="hid">Hide Chicken</button>
-        <button id="sho">Show Chicken</button>
-        <button id="hi">Hide Chameleon</button>
-        <button id="sh">Show Chameleon</button>
-        <button id="h">Hide Cat</button>
-          <button id="s">Show Cat</button>
-          <div id="dog">
-            <img src="https://boygeniusreport.files.wordpress.com/2016/11/puppy-dog.jpg?quality=98&strip=all&w=782">
-        </div>
-        <div id="chicken">
-            <img src="https://i2-prod.mirror.co.uk/incoming/article8456597.ece/ALTERNATES/s615/Chicken.jpg">
-        </div>
-        <div id="chameleon">
-            <img src="https://cdn0.wideopenpets.com/wp-content/uploads/2016/01/rsz_chameleon-03-770x405.jpg">
-        </div>
-          <div id="cat">
-            <img src="https://imgix.bustle.com/uploads/image/2018/10/18/4e1afb93-afba-49fe-96e6-b2bbd1ea0125-safe-toys-for-kittens.jpg?w=970&h=546&fit=crop&crop=faces&auto=format&q=70">
-        </div>
-          
-    </div>
-      
+$(document).ready(function(){
+  $("#hid").click(function(){
+    $("#chicken").hide();
+  });
+  $("#sho").click(function(){
+    $("#chicken").show();
+  });
+});
+
+$(document).ready(function(){
+  $("#hi").click(function(){
+    $("#chameleon").hide();
+  });
+  $("#sh").click(function(){
+    $("#chameleon").show();
+  });
+});
+
+$(document).ready(function(){
+  $("#h").click(function(){
+    $("#cat").hide();
+  });
+  $("#s").click(function(){
+    $("#cat").show();
+  });
+});</script>
+      
+<script src="script.js"></script>
+
 
 </body>
-
 </html>
